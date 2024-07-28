@@ -1,151 +1,157 @@
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "搞笑脚本", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用搞笑脚本", ConfigFolder = "qq号2977114347"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "☁️脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-    Name = "服务器脚本",
+	Name = "公告",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
+OrionLib:MakeNotification({
+	Name = "☁️中心",
+	Content = "欢迎使用☁️脚本！",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 Tab:AddButton({
-	Name = "压力",
+	Name = "☁️脚本",
 	Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zuohongjian/bjb/main/Pressure')))()
-end
-})    
-Tab:AddButton({
-	Name = "bf（刷钱）",
-	Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BloxFruits"),true))()
-end
-})......
+      		print("button pressed")
+  	end    
+})
+Tab:AddToggle({
+	Name = "This is a ☁️脚本!",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+Tab:AddSlider({
+	Name = "打赏",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "元",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
 local Tab = Window:MakeTab({
-    Name = "脚本",
+	Name = "游戏",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "晴云中心",
+	Name = "飞行",
 	Callback = function()
-    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
-end
-})    
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+      		print("button pressed")
+  	end    
+})
 Tab:AddButton({
-	Name = "禁漫中心",
+	Name = "战争大亨",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/ng/main/jmlllllllIIIIlllllII.lua"))() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/WarTycoon", true))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "自然灾害",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/MAIN'))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "自然灾害2",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackingProject/HPHub/main/HPHub.lua"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+	--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://pastebin.com/raw/GRp9rP98"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "外网脚本1",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "外网脚本.2",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "画画🎨",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "脚本大全1.5",
+	Callback = function()
+	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+	end    
+})
+Tab:AddButton({
+	Name = "门",
+	Callback = function()
+loadstring(game:HttpGet("https://github.com/DocYogurt/free/raw/main/long"))()
 end
-})......
-local LBLG = Instance.new("ScreenGui", getParent)
-local LBL = Instance.new("TextLabel", getParent)
-local player = game.Players.LocalPlayer
-
-LBLG.Name = "LBLG"
-LBLG.Parent = game.CoreGui
-LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-LBLG.Enabled = true
-LBL.Name = "LBL"
-LBL.Parent = LBLG
-LBL.BackgroundColor3 = Color3.new(1, 1, 1)
-LBL.BackgroundTransparency = 1
-LBL.BorderColor3 = Color3.new(0, 0, 0)
-LBL.Position = UDim2.new(0.75,0,0.010,0)
-LBL.Size = UDim2.new(0, 133, 0, 30)
-LBL.Font = Enum.Font.GothamSemibold
-LBL.Text = "TextLabel"
-LBL.TextColor3 = Color3.new(1, 1, 1)
-LBL.TextScaled = true
-LBL.TextSize = 14
-LBL.TextWrapped = true
-LBL.Visible = true
-
-local FpsLabel = LBL
-local Heartbeat = game:GetService("RunService").Heartbeat
-local LastIteration, Start
-local FrameUpdateTable = { }
-
-local function HeartbeatUpdate()
-	LastIteration = tick()
-	for Index = #FrameUpdateTable, 1, -1 do
-		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
-	end
-	FrameUpdateTable[1] = LastIteration
-	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
-	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+})
+Tab:AddButton({
+	Name = "穿墙(无拉回)",
+	Callback = function()
+loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
 end
-Start = tick()
-local ScreenGui = Instance.new("ScreenGui")
-local UI = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local Frame = Instance.new("Frame")
-local Key = Instance.new("TextBox")
-local Start = Instance.new("TextButton")
+})
+Tab:AddButton({
+	Name = "变身",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end
+})
+Tab:AddButton({
+	Name = "微山2.3.2",
+	Callback = function()
+--微山doors 2.3.2(愚人节快乐)
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+end
+})
+Tab:AddButton({
+	Name = "辅助脚本",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end
+})
+Tab:AddButton({
+	Name = "指令",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end
+})
+local Tab = Window:MakeTab({
+    Name = "🌟脚本中心🌟",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
 
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-UI.Name = "搞笑卡密"
-UI.Parent = ScreenGui
-UI.Active = true
-UI.BackgroundColor3 = Color3.new(0, 0, 0)
-UI.BackgroundTransparency = 0
-UI.BorderSizePixel = 3
-UI.Position = UDim2.new(0.5, -150, 0.5, -67)
-UI.Size = UDim2.new(0, 260, 0, 250)
-UI.Draggable = true
-
-Title.Name = "Title"
-Title.Parent = UI
-Title.BackgroundColor3 = Color3.new(68, 68, 68)
-Title.BackgroundTransparency = 1
-Title.BorderSizePixel = 2
-Title.Position = UDim2.new(0, 0, 0.02, 0)
-Title.Size = UDim2.new(1, 0, 0, 50)
-Title.Font = Enum.Font.SourceSans
-Title.Text = "密钥系统"
-Title.TextColor3 = Color3.new(0, 0, 255)
-Title.TextScaled = true
-Title.TextSize = 14
-Title.TextWrapped = true
-
-Frame.Parent = Title
-Frame.BackgroundColor3 = Color3.new(0, 0, 255)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.07, 0, 0.9, 0)
-Frame.Size = UDim2.new(0.85, 0, 0, 6)
-
-Key.Name = "Key"
-Key.Parent = UI
-Key.BackgroundColor3 = Color3.new(1, 1, 1)
-Key.BorderSizePixel = 0
-Key.Position = UDim2.new(0.1, 0, 0.31, 0)
-Key.Size = UDim2.new(0.8, 0, 0, 50)
-Key.Font = Enum.Font.SourceSans
-Key.PlaceholderText = "输入钥密"
-Key.Text = ""
-Key.TextColor3 = Color3.new(0, 0, 0)
-Key.TextScaled = true
-Key.TextSize = 14
-Key.TextWrapped = true
-
-Start.Name = "Start"
-Start.Parent = UI
-Start.BackgroundColor3 = Color3.new(0, 0, 255)
-Start.BackgroundTransparency = 0
-Start.BorderSizePixel = 2
-Start.Position = UDim2.new(0.25, 0, 0.65, 0)
-Start.Size = UDim2.new(0.5, 0, 0, 45)
-Start.Font = Enum.Font.Gotham
-Start.Text = "检查卡密"
-Start.TextColor3 = Color3.new(0, 0, 0)
-Start.TextScaled = true
-Start.TextSize = 10
-Start.TextWrapped = true
-
-Start.MouseButton1Click:Connect(function()
-    if Key.Text == "114514" then
-        ScreenGui:Destroy()
-    else
-        game.Players.LocalPlayer:Kick("卡密都错了，你玩啥呀")
-    end
-end)
+Tab:AddButton({
+    Name = "🏳️‍🌈秋🏳️‍🌈",
+    Callback = function()
+    local SCC_CharPool={
+[1]= tostring(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,87,83,56,53,55,57,54,48,47,45,47,109,97,105,110,47,37,69,55,37,65,55,37,56,66,37,67,50,37,66,55,37,69,56,37,56,55,37,65,65,37,69,53,37,56,56,37,66,54,37,69,56,37,56,52,37,57,65,37,69,54,37,57,67,37,65
